@@ -10,6 +10,8 @@ Rails3BootstrapDeviseCancan::Application.routes.draw do
 
   root :to => "home#index"
 
+  resources :posts
+
   resources :users, :only => [:show, :index] do
     resources :posts
   end
