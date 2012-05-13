@@ -10,3 +10,6 @@
     = f.check_box :facebook
     = f.label :facebook
   = f.submit "Post"
+  
+.posts
+  = render :partial => 'post', :collection => posts

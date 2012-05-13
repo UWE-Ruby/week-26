@@ -1,0 +1,10 @@
+.post
+  .message
+    = post.message
+  .posted_at
+    = post.updated_at
+  .services
+    .twitter
+      = post.twitter?
+    .facebook
+      = post.facebook?
