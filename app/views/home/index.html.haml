@@ -1,0 +1,3 @@
+%h3 Home
+- @users.each do |user|
+  User: #{link_to "#{user.name}", user_path(user)}
