@@ -1,0 +1,14 @@
+.post
+  .user
+    = post.user.name 
+    said ...
+  .message
+    = post.message
+  .details
+    .posted_at
+      = post.updated_at
+    .services
+      - if post.twitter?
+        = image_tag("twitter.png")
+      - if post.facebook?
+        = image_tag("facebook.png")

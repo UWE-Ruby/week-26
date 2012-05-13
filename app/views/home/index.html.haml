@@ -1,0 +1,6 @@
+- if current_user.present?
+  %h3 Go Viral!
+  = render :partial => '/posts/create_post'
+%br{'style' => 'clear: both'}
+%h3 Latest Posts
+= render :partial => '/posts/post', :collection => posts

@@ -1,0 +1,12 @@
+.create-post
+  = form_for [current_user,Post.new] do |f|
+    .message
+      = f.text_area :message, :rows => 4, :cols => 100
+    .services
+      .group
+        = f.check_box :twitter
+        = f.label :twitter
+      .group
+        = f.check_box :facebook
+        = f.label :facebook
+      = f.submit "Post"

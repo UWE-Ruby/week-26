@@ -2,4 +2,12 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  title: "Viralizer"
+  navigation:
+    login: 'Login'
+    logout: 'Logout'
+    account:
+      edit: 'Edit Account'
+    admin: 'Admin'
+    signup: 'Sign Up'
+  

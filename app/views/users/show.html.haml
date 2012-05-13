@@ -1,0 +1,7 @@
+%h1 #{@user.name}
+
+%p User: #{@user.name}
+%p Email: #{@user.email}
+
+= link_to image_tag("facebook.png"), user_omniauth_authorize_path(:facebook)
+= link_to image_tag("twitter.png"), user_omniauth_authorize_path(:twitter)

@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @users = User.all
+    render :locals => { :posts => Post.all }
   end
 end
