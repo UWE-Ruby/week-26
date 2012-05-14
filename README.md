@@ -11,9 +11,19 @@ bloated.
 
 ### Exercise
 
-The objective of the exercise is to _skinny up_ the controller in the sample
-code.
+This week is a sample Rails application that allows a user to login and
+authenticate with various services. After a user has authorized the various
+services when the user creates a _post_, they can have it appear on the
+various services.
 
+The objective of the exercise is to _skinny up_ the Posts Controller in the
+sample code.
+
+> [app/controller/posts_controller.rb](https://github.com/UWE-Ruby/week-26/blob/master/app/controllers/posts_controller.rb)#create is controller action that
+you should be addressing.
+
+> You should generate a test account for __Twitter__ and/or __Facebook__ to
+  ensure you do not annoy your friends as you create sample posts.
 
 #### Goal
 
