@@ -44,6 +44,12 @@ controller and move it into model callbacks or into an observer.
 
 * Would using an observer be more maintainable as you add or remove services?
 
+* For the observer or the callback, at what stage in the lifecycle did you
+  choose to send the content to the other services?
+  
+* What happens to the user's request when a service hangs or takes a long time 
+  to respond?
+
 ### Reading
 
 * [Callbacks](http://guides.rubyonrails.org/active_record_validations_callbacks.html#available-callbacks)
