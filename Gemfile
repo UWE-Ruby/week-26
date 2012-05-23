@@ -32,7 +32,6 @@ gem "cucumber-rails", ">= 1.3.0", :group => :test
 gem "capybara", ">= 1.1.2", :group => :test
 gem "database_cleaner", ">= 0.7.2", :group => :test
 
-
-# group :presenter do
-#   gem 'showoff', :git => 'git@github.com:burtlo/showoff.git'
-# end
+group :presenter do
+  gem 'showoff', :git => 'git@github.com:burtlo/showoff.git'
+end
