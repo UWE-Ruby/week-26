@@ -9,7 +9,8 @@ class PostsController < ApplicationController
   end
 
   def create
-    post = Post.create(params[:post],:user => current_user)
+    # require 'ruby-debug' ; debugger
+    post = Post.create(params[:post].merge(:user => current_user))
 
     if post.twitter
       current_user.twitter.update post.message
@@ -19,7 +20,7 @@ class PostsController < ApplicationController
       current_user.facebook.put_wall_post post.message
     end
 
-    redirect_to user_posts_path(current_user)
+    redirect_to posts_path
   end
 
 end
