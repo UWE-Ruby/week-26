@@ -1,0 +1,16 @@
+
+title "Skinny Controllers"
+
+description "Using model lifecycle callbacks and observers to keep you controller simple"
+
+slides "intro.md"
+slides "exercise.md"
+slides "concepts.md"
+slides "goal.md"
+slides "exercise.md"
+slides "timer1.md"
+slides "retrospective.md"
+slides "lesson.md"
+slides "exercise.md"
+slides "timer2.md"
+slides "further.md"
