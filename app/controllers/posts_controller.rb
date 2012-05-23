@@ -9,7 +9,6 @@ class PostsController < ApplicationController
   end
 
   def create
-    # require 'ruby-debug' ; debugger
     post = Post.create(params[:post].merge(:user => current_user))
 
     if post.twitter
