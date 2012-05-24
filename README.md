@@ -34,21 +34,39 @@ controller and move it into model callbacks or into an observer.
 
 ### Exercise Retrospective
 
-* What would happen if you started to add more services?
+#### Imagine adding a new service
 
-* Would the previous solution, logic within the controller, to be maintainable
-  as you add or remove services?
+* How maintainable would logic within the controller become?
 
-* Would using model callbacks be more maintainable as you add or remove
-  services?
+* model callbacks?
 
-* Would using an observer be more maintainable as you add or remove services?
+* a single 'PostObserver'?
 
-* For the observer or the callback, at what stage in the lifecycle did you
-  choose to send the content to the other services?
+* an observer for each service?
+
+#### Imagine removing a service
+
+* How maintainable would logic within the controller become?
+
+* model callbacks?
+
+* a single 'PostObserver'?
+
+* an observer for each service?
+
+#### Handling service specific error messages
   
-* What happens to the user's request when a service hangs or takes a long time 
-  to respond?
+* How maintainable would logic within the controller become?
+
+* model callbacks?
+
+* a single 'PostObserver'?
+
+* an observer for each service?
+
+#### Responsiveness
+
+* What happens to the user's request when a service hangs or takes a long time to respond? Do any of these implementation address this issue?
 
 ### Reading
 
