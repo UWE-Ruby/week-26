@@ -4,25 +4,24 @@
 
 !SLIDE quote
 
-## Reading
+## Add Additional Sources
 
-That's a good question?
+Github
 
-!SLIDE bullets
+Google
 
-## Additional Sources
+...
 
-* Github
-* Google
-* ...
+!SLIDE quote
 
-!SLIDE
+## More Features
 
-## Retrieving and Showing Other Sources
+Unified Feed
 
-* User's Twitter timeline
-* Users Facebook timeline
+!SLIDE quote
 
-!SLIDE
+## Explore
 
-## Redis and Resque
+Redis
+
+Resque

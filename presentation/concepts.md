@@ -29,9 +29,9 @@ end
 
 ```
 
-!SLIDE
+!SLIDE quote
 
-ActiveRecord Model Callbacks
+## ActiveRecord Model Callbacks
 
 ```ruby
 before_validation
@@ -45,20 +45,63 @@ after_save
 after_commit
 ```
 
-!SLIDE
+!SLIDE quote
 
-Observers
+## Setting up a callback
 
 ```ruby
-class PostObserver < ActiveRecord::Observer
+class Post < ActiveRecord::Base
 
-  def after_commit(model)
-    # ...
+  before_save :do_this_before_saving
+
+  def do_this_before_saving
+    puts "Doing this before saving for post: #{self}"
   end
 
 end
 ```
 
+!SLIDE
+
+## Observers
+
+```ruby
+class PostObserver < ActiveRecord::Observer
+
+  def after_commit(model)
+    puts "Doing this after committing for post: #{model}"
+  end
+
+end
+```
+
+!SLIDE
+
+## Register the Observer
+
+```ruby
+# ... in your config/application.rb
+config.active_record.observers = :post_observer
+```
+
+!SLIDE
+
+## Nosey Observers
+
+```ruby
+class ServiceObserver < ActiveRecord::Observer
+  observe :post
+  
+  def after_commit(model)
+    puts "Doing this after committing for post: #{model}"
+  end
+end
+```
+
 !SLIDE quote
 
-http://guides.rubyonrails.org
+## Great Reference
+
+[http://guides.rubyonrails.org](http://guides.rubyonrails.org)
+
+Active Record Validations and Callbacks
